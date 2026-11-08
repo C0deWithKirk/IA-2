@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf - Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo"><a href="index.html">Coding Conf</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" aria-current="page">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="form-container glass-panel">
+            <h1>Event Registration</h1>
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required
+                           aria-required="true" autocomplete="name"
+                           aria-describedby="nameError">
+                    <span class="error" id="nameError" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" required
+                           aria-required="true" autocomplete="email"
+                           aria-describedby="emailHint emailError">
+                    <small id="emailHint">Example: user@domain.com</small>
+                    <span class="error" id="emailError" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="github">GitHub User Tag</label>
+                    <input type="text" id="github" name="github" placeholder="@username"
+                           required aria-required="true"
+                           aria-describedby="githubHint githubError">
+                    <small id="githubHint">Must start with @, for example @octocat</small>
+                    <span class="error" id="githubError" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="avatar">Avatar Graphic Upload (JPEG/PNG, max 500KB)</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"
+                           required aria-required="true"
+                           aria-describedby="avatarError">
+                    <span class="error" id="avatarError" role="alert"></span>
+                </div>
+
+                <button type="submit" class="btn-register">Get My Ticket</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Coding Conf. All rights reserved.</p>
+    </footer>
+    <script src="../js/validation.js"></script>
+</body>
+</html>

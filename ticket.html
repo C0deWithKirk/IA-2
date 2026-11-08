@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Ticket | Coding Conf 2026</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a class="brand" href="index.html">
+      <img src="../assets/logo.svg" alt="">
+      <span>Coding Conf</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="ticket-banner" aria-labelledby="ticket-title">
+      <h1 id="ticket-title" class="gradient-text">
+        Congrats, <span id="banner-name">friend</span>! Your ticket is ready.
+      </h1>
+      <p>We have also saved your details on this device.</p>
+    </section>
+
+    <section aria-label="Conference ticket">
+      <article class="ticket">
+        <div class="ticket-brand">
+          <img src="../assets/logo.svg" alt="Coding Conf logo">
+          <div>
+            <h2 class="gradient-text">Coding Conf 2026</h2>
+            <p class="ticket-meta">October 26, 2026 / Papine, Kgn</p>
+          </div>
+        </div>
+
+        <p class="ticket-serial" id="ticket-serial">#00000</p>
+
+        <div class="attendee">
+          <img id="ticket-avatar" src="../assets/logo.svg" alt="My uploaded avatar">
+          <div>
+            <p class="attendee-name" id="ticket-name">Attendee name</p>
+            <p><a id="ticket-github" href="https://github.com/" target="_blank" rel="noopener">@github</a></p>
+            <p class="ticket-meta" id="ticket-email"></p>
+          </div>
+        </div>
+      </article>
+
+      <p class="actions">
+        <button type="button" class="btn" id="new-ticket">Register another attendee</button>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Coding Conf. CIT2011 Web Programming IA#2.</p>
+  </footer>
+
+  <script src="../js/ticket.js"></script>
+</body>
+</html>
